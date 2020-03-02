@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-def multivariateGrid(col_x, col_y, col_k, df, k_is_color=False, scatter_alpha=.5):
+def multivariateGrid(col_x, col_y, col_k, df, line=None, k_is_color=False, scatter_alpha=.5):
     def colored_scatter(x, y, c=None):
         def scatter(*args, **kwargs):
             args = (x, y)
@@ -50,3 +50,5 @@ def multivariateGrid(col_x, col_y, col_k, df, k_is_color=False, scatter_alpha=.5
         vertical=True
     )
     plt.legend(legends)
+    if line is not None:   
+        plt.plot(line[0], line[1], color='green')
