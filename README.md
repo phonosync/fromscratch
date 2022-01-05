@@ -12,5 +12,5 @@ Various data science related algorithms implemented from scratch for illustrativ
 
 ## Installation
 conda fromscratch create -f conda_env.yml
-m
+
 
